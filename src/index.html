@@ -15,8 +15,12 @@
     <script>
         window.__theme = 'bs4';
     </script>
+    
+    <app-root smoothScroll 
+    [duration]="10000"
+	[easing]="easeInQuint"
+	[offset]="30000000"></app-root>
 
-    <app-root></app-root>
 </body>
 
 </html>

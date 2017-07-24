@@ -1,27 +1,25 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {
+  NgModule
+} from '@angular/core';
+import {
+  CommonModule
+} from '@angular/common';
 
-import { CollapseModule } from 'ngx-bootstrap/collapse';
-
-import { NavModule } from './nav/nav.module';
-import { HeaderModule } from './header/header.module';
-
-// import { HeaderComponent } from './header/header.component';
-// import { NavComponent } from './nav/nav.component';
+import {
+  NavModule
+} from './nav/nav.module';
+import {
+  HeaderModule
+} from './header/header.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    CollapseModule.forRoot()
   ],
   exports: [
-    // HeaderComponent,
-    // NavComponent,
+    HeaderModule,
+    NavModule,
   ],
-  declarations: [
-    // HeaderComponent,
-    // NavComponent
-  ]
+  declarations: []
 })
-export class CoreModule {
-}
+export class CoreModule { }
